@@ -1,0 +1,275 @@
+body, html {
+    background: var(--NN0, #FFFFFF) !important;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: var(--NN1000, rgba(0, 0, 0, 0.54));
+}
+
+button, input, optgroup, select, textarea {
+    font-family: 'Open Sauce One';
+}
+
+/* Header */
+.mainHead {
+    background-color: var(--NN0, #FFFFFF);
+    border-bottom: 1px solid var(--NN50, #F0F3F7);
+    flex-direction: column;
+    align-items: center;
+    top: 0px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    min-width: 1024px;
+    display: flex;
+    position: fixed;
+    height: 130px;
+}
+
+/* Header_first */
+.head_F {
+    width: 100%;
+    display: flex;
+    height: 32px;
+    z-index: 3;
+    background-color: var(--NN50, #F0F3F7);
+    padding: 0 32px;
+    position: fixed;
+    justify-content: space-between;
+    left: 0px;
+    right: 0px;
+}
+
+.lgHT {
+    width: 20px;
+    height: 20px;
+    margin-right: 1.5px;
+    background-image: url(Logo/dwnApp.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 60% 60%;
+    display: inline-block;
+}
+
+.lgHT-1 {
+    width: 20px;
+    height: 20px;
+    margin-right: 1.5px;
+    background-image: url(Logo/src.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 60% 60%;
+    display: inline-block;
+}
+
+.lgHT-2 {
+    width: 40px;
+    height: 40px;
+    background-image: url(Logo/troly.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 60% 60%;
+    display: inline-block;
+}
+
+.lgHT-3 {
+    width: 15px;
+    height: 15px;
+    background-image: url(Logo/placeholder.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 60% 60%;
+    display: inline-block;
+}
+
+.head_S {
+    line-height: 31px;
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    align-items: center;
+    transition: color 200ms ease;
+}
+
+.head_T {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    width: 533px;
+    gap: 32px;
+}
+
+.head_S a:hover, 
+.head_T a:hover {
+    color: #F48183;
+}
+
+.childHT-DownApp, .childHT-Abt,
+.childHT-Ptr, .childHT-Slg, .childHT-Pro, 
+.childHT-Hlp {
+    color: var(--NN600, #6D7588);
+    font-size: 12px;
+    line-height: 31px;
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    align-items: center;
+    transition: color 200ms ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* header-second */
+.head_F1 {
+    width: 96%;
+    left: 32px;
+    display: flex;
+    height: 100px;
+    top: 30px;
+    position: fixed;
+    align-items: center;
+    display: flex;
+    justify-content: flex;
+    gap: 32px;
+}
+
+.searchBar {
+    width: 90%;
+    display: flex;
+    box-sizing: border-box;
+    border: solid 1px var(--NN300, #BFC9D9);
+    align-items: center;
+    height: 40px;
+    border-radius: 8px;
+    transition: border 280ms ease;
+}
+
+.searchBar_Sec {
+    background-color: var(--NN0, #FFFFFF);
+    border-radius: 8px;
+    overflow: hidden;
+    padding-left: 8px;
+    padding-right: 8px;
+    transition: border-color 300ms cubic-bezier(0.63,0.01,0.29,1);
+    gap: 8px;
+    width: 100%;
+    display: flex;
+}
+
+.searchBar_CC {
+    border: 1px solid grey;
+    margin-right: 30px;  
+    height: auto;
+    width: 200px ;
+    border-radius: 5px;
+}
+
+.menuShw {
+    color: #6D7588;
+}
+
+.inputSrc input {
+    border-color: var(--NN0, #FFFFFF);
+    width: 300px;
+    height: 25px;
+}
+
+.inputSrc input:hover {
+    border-color: #e76800;
+}
+
+.img-Logo-1 {
+    width: 200px;
+    height: auto;
+}
+
+.signPg {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+.signPg .lF {
+    width: 1.2px;
+    min-width: 1.2px;
+    height: 24px;
+    background: var(--NN100, #E4EBF5);
+    margin: 3px 0px 0px 10px;
+}
+
+.login {
+    background-color: white;
+    border: 1px solid #e76800; 
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    width: 70px;
+    height: 30px;
+}
+
+.login a {
+    color: #e76800;
+    text-decoration: none;
+    margin-left: 20%;
+}
+
+.sign-Up {
+    background-color: #e76800;
+    border: 1px solid #e76800;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    width: 70px;
+    height: 30px;
+}
+
+.sign-Up a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10%;
+}
+
+.contFam {
+    position: fixed;
+    top: 108px;
+    width: 45%;
+    left: 90%;
+    display: flex;
+}
+
+.location {
+    position: fixed;
+    top: 108px;
+    width: 45%;
+    left: 309px;
+    display: flex;
+}
+
+.location a {
+    color: var(--NN600, #6D7588);
+    text-decoration: none;
+}
+
+/* responsive Tab */
+@media only screen and (max-width: 1024px) {
+    .head_F, .img-Logo {
+        display: none;
+    }
+    .mainHead {   
+        height: 65px;
+    }
+    .searchBar {
+        width: 70%;
+    }
+}
+
+/* responsive HandPhone */
+@media only screen and (max-width: 768px) {
+    .head_F, .img-Logo {
+        display: none;
+    }
+    .mainHead {
+        height: 50px;
+    }
+}
