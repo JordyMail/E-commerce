@@ -9,5 +9,6 @@ class HomeController extends Controller
     public function index()
     {
         return view('home'); // Create this view for the home page
+        // this part to connect the page to home page
     }
 }
