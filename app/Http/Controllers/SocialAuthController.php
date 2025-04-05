@@ -26,5 +26,8 @@ class SocialAuthController extends Controller
         Auth::login($authUser);
 
         return redirect()->route('home'); // Redirect to a desired route
+        // this part to connect the page to home page
+        // You can also pass the user data to the view if needed
+        // return view('home', ['user' => $authUser]);
     }
 }
